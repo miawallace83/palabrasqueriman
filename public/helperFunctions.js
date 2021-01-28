@@ -7,7 +7,7 @@ const renderResponse = (res) => {
   // In case res comes back as a blank array
   if (!res.length) {
     responseField.innerHTML =
-      "<p>Try again!</p><p>There were no suggestions found!</p>";
+      "<p>Prueba otra vez!</p><p>No encontre sugerencias!</p>";
     return;
   }
 
@@ -22,7 +22,7 @@ const renderResponse = (res) => {
   wordList = wordList.join("");
 
   // Manipulates responseField to render the modified response
-  responseField.innerHTML = `<p>You might be interested in:</p><ol>${wordList}</ol>`;
+  responseField.innerHTML = `<p>Estas palabras riman con la que enviaste:</p><ol>${wordList}</ol>`;
   return;
 };
 
